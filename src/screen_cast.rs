@@ -12,7 +12,8 @@ use zbus::zvariant::{DeserializeDict, ObjectPath, OwnedObjectPath, SerializeDict
 use super::handle_token::HandleToken;
 
 //  This lovelyyy codee is copieed from https://github.com/bilelmoussaoui/ashpd/blob/master/src/desktop/open_uri.rs#L125
-//   Licensed under the lovellyy MIT License (https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE)
+//  Originally licensed under the lovellyy MIT License (https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE)
+//  But upgraded to LGPLv2.1-or-later!
 #[derive(SerializeDict, DeserializeDict, Type, Debug, Default)]
 /// Specified options for a [`ScreenCastProxy::open_file`] or
 /// [`ScreenCastProxy::open_uri`] request.

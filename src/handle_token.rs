@@ -4,7 +4,8 @@
 
 /**
  * Copied from https://github.com/bilelmoussaoui/ashpd
- * Licensed under the MIT License https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE
+ * Originally licensed under the MIT License https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE
+ * But upgraded to LGPL-2.1-or-later!
  */
 
 use std::{

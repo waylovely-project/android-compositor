@@ -14,6 +14,8 @@ pub fn get_env<'a>() -> JNIEnv<'a> {
 /**
  *
  * Copied from https://github.com/bilelmoussaoui/ashpd/blob/master/src/desktop/request.rs#L191-L197
+ * 
+ * Upgraded to LGPLv2.1-or-later!
  */
 pub fn get_object_path(handle_token: HandleToken) -> OwnedObjectPath {
     let connection = CONNECTION.get().unwrap();
