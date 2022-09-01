@@ -1,6 +1,12 @@
 # Waylovely
 Run all your Linux graphical apps on Android 💖✨✨✨
 
+## Development
+The development is splitted up in different repositories!!
+
+- [Smithay](https://github.com/Smithay/smithay) - The Waylovely Project contributes a backend in Smithay for use in Android applications!! Here is our [PR](https://github.com/Smithay/smithay/pull/711)!
+- [xdg-desktop-portal-android](https://github.com/waylovely-project/xdg-desktop-portal-android) - In order for desktop Linux apps to use relevant Android APIs, we need . So we have this Xdg Desktop Portal implementation for Android. This is also useful for SDL-based applications!! SDL actually can render without the need of a Wayland compositor but the app might depend on Portals.
+
 <!--## Step 1: Getting the compositor -->
 
 ### Related Things
