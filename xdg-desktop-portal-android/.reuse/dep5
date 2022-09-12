@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Portals for Android
+Upstream-Contact: Nefo Fortressia <nefothingy@hotmail.com>
+Source: https://github.com/EchidnaHQ/xdg-desktop-portal-android
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
