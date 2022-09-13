@@ -1,0 +1,2 @@
+[workspace]
+members = ["xdg-desktop-portal-android", "waylovely-comp"]
