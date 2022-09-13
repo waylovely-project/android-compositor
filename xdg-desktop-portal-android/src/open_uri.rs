@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use super::handle_token::HandleToken;
 use crate::bindings::activity::Activity;
@@ -69,7 +69,7 @@ impl OpenURI {
         if uri.starts_with("/data/data") {
             return Err(Error::AccessDenied("Files under /data/data might not be available to other apps! And we don't want to open their secret files!".to_string()));
         }
-        
+
         match fs::canonicalize(uri) {
             Ok(path) => {
                 self.open_uri(parent_window, &path.to_string_lossy(), options)

@@ -1,13 +1,12 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 /**
  * Copied from https://github.com/bilelmoussaoui/ashpd
  * Originally licensed under the MIT License https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE
- * But upgraded to LGPL-2.1-or-later!
+ * But upgraded to Apache-2.0 OR MIT!
  */
-
 use std::{
     convert::TryFrom,
     fmt::{self, Debug, Display},

@@ -1,13 +1,13 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use std::collections::HashMap;
 use std::iter::Product;
 
 use crate::bindings::intent::Action;
 use crate::{bindings::intent::Intent, helpers::get_object_path};
-use itertools::{Itertools, iproduct};
+use itertools::{iproduct, Itertools};
 use jni::objects::{JString, JValue};
 use regex::Regex;
 use serde::{Deserialize, Serialize};
@@ -18,8 +18,6 @@ use zbus::fdo::{Error, Result};
 use zbus::zvariant::{DeserializeDict, OwnedObjectPath, SerializeDict, Type};
 
 use super::handle_token::HandleToken;
-
-
 
 //  This lovelyyy codee is copieed from https://github.com/bilelmoussaoui/ashpd/blob/master/src/desktop/open_uri.rs
 //   Licensed under the lovellyy MIT License (https://github.com/bilelmoussaoui/ashpd/blob/master/LICENSE)
@@ -81,7 +79,6 @@ impl FileChooser {
                 if mime.0 == FilterType::MimeType {
                     mimes.push(mime.1);
                 } else if mime.0 == FilterType::GlobPattern {
-                    
                 }
             }
         }

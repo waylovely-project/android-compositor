@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use itertools::{iproduct, Itertools};
 use regex::Regex;
@@ -41,7 +41,9 @@ pub fn glob_to_mime(glob: &str) -> Vec<String> {
         .map(|combination| {
             let mut extension = String::from(extension);
             for (i, combination_part) in combination.iter().enumerate() {
-                extension = extension.split(patterns[i]).join(&combination_part.to_string());
+                extension = extension
+                    .split(patterns[i])
+                    .join(&combination_part.to_string());
             }
 
             extension

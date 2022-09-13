@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use std::ops::Deref;
 

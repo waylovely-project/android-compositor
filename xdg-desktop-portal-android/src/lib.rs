@@ -1,10 +1,10 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 pub mod bindings;
-pub mod glob_to_mime;
 mod file_chooser;
+pub mod glob_to_mime;
 use file_chooser::FileChooser;
 use jni::{InitArgsBuilder, JNIVersion, JavaVM};
 use once_cell::sync::OnceCell;

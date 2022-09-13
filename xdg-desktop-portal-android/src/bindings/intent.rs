@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: 2022 Nefo Fortressia <nefothingy@hotmail.com>
 //
-// SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use std::ops::Deref;
 
@@ -59,7 +59,7 @@ impl Intent<'_> {
         )
     }
 
-    pub fn set_type_and_normalize(&self, mime: &str) ->  Result<JValue> {
+    pub fn set_type_and_normalize(&self, mime: &str) -> Result<JValue> {
         let env: JNIEnv = get_env();
 
         env.call_static_method(
