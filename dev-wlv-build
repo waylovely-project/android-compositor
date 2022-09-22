@@ -1,3 +1,0 @@
-#!/bin/sh
-
-cd simple-and-kawaii && poetry run sh -c "cd ../waylovely-build && exec $SHELL" 

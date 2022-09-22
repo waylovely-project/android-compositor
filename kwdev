@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pathy=$(readlink -f "$1")
+cd simple-and-kawaii && poetry run sh -c "cd $pathy && exec $SHELL" 
