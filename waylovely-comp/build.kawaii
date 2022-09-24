@@ -1,0 +1,12 @@
+deps = ["waylovely/*"]
+
+[module]
+run = "cargo-apk"
+
+[android]
+sdk = "29"
+ndk = "23"
+
+
+[collections]
+wraps = "file://../waylovely-build/"
