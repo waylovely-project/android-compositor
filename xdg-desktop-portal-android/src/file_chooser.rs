@@ -6,6 +6,7 @@ use std::collections::HashMap;
 use std::iter::Product;
 
 use crate::bindings::intent::Action;
+use crate::glob_to_mime::glob_to_mime;
 use crate::{bindings::intent::Intent, helpers::get_object_path};
 use itertools::{iproduct, Itertools};
 use jni::objects::{JString, JValue};
@@ -79,6 +80,7 @@ impl FileChooser {
                 if mime.0 == FilterType::MimeType {
                     mimes.push(mime.1);
                 } else if mime.0 == FilterType::GlobPattern {
+                    mimes.extend(glob_to_mime(&mime.1))
                 }
             }
         }
