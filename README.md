@@ -1,6 +1,6 @@
 ![Waylovely](https://user-images.githubusercontent.com/66000635/193557047-993b33ed-58cd-4d6a-a8e2-890cde6bcf4a.png)
 
-<div align="center">/<h2>Run all your Linux graphical apps on Android 💖✨✨✨</h2></div>
+<div align="center"><h2>Run all your Linux graphical apps on Android 💖✨✨✨</h2></div>
 
 The Android windowing system is different than those in desktop operating systems. In the desktop, windowing systems allow applications to open as much windows as the hardware able to run. However this is not the case in Android!! Android is intended to be oriented towards mobile devices, which has less powerful hardware than desktops, so it will do things like only allowing an app to get one EGLSurface!!
 
