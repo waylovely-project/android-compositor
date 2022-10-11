@@ -90,6 +90,7 @@ pub struct Action(&'static str);
 impl Action {
     pub const VIEW: Action = Action("android.intent.action.VIEW");
     pub const GET_CONTENT: Action = Action("android.intent.action.GET_CONTENT");
+    pub const SEND: Action = Action("android.intent.action.SEND");
 }
 
 impl<'a> Into<JString<'a>> for Action {

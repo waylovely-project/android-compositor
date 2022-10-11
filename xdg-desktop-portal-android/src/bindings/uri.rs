@@ -28,6 +28,18 @@ impl Uri<'_> {
     }
 }
 
+impl<'a> From<dyn AsRef<str>> for Uri<'a> {
+    fn from(string: dyn AsRef<str>) -> Self {
+        Self::from_str(&string)
+    }
+}
+
+impl<'a> From<Fd> for Uri<'a> {
+    fn from(fd: Fd) -> Self {
+        Self::from_str(&format!("file://{}", zbusfd_to_pathbuf(&fd).to_string()))
+    }
+}
+
 impl<'a> Deref for Uri<'a> {
     type Target = JValue<'a>;
 
