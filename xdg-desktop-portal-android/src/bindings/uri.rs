@@ -5,13 +5,14 @@
 use std::ops::Deref;
 
 use jni::objects::JValue;
+use zbus::zvariant::Fd;
 
-use crate::JVM;
+use crate::{fd::zbusfd_to_pathbuf, JVM};
 
 pub struct Uri<'a>(JValue<'a>);
 
 impl Uri<'_> {
-    pub fn from_string(uri: &str) -> Self {
+    pub fn from_str(uri: &str) -> Self {
         let jvm = JVM.get().unwrap();
 
         let env = jvm.get_env().unwrap();
