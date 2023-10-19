@@ -1,3 +1,19 @@
+# This project is on halt!
+This attempt at bringing Linux applications to Android devices, called the "Waylovely Compositor" has been on halt for... around more than a year and some months.
+(different from ["Waylovely Stories"](instagram.com/waylovely.stories) which is an indie multimedia doujinshi circle that has me, Astriya, as one of its members derived from the same name. You might see a big banner advertising it soon. Also please follow and share!)
+
+At first, the code lives in [a fork of the Smithay compositor](https://github.com/waylovely-project/smithay). This codebase at first was intended to be submitted to upstream, but then it became intended only for prototyping. Perhaps the core reason is that upstream added the Smallvil compositor that is much simpler because it only has support for Winit, which is how the "Waylovely Compositor" prototype was started the first time, because the initial driving force for me was, "Hey, Winit works on Android you know? So theoritically Smithay too."
+
+If you are looking to try the experiment that has at least been run by someone, you can try this codebase. I created the APK using the [`cargo-apk`](https://github.com/rust-mobile/cargo-apk) tooling which is now deprecated. You also have to build the dependencies, which are built using an earlier version of Waylovely Compositor's [`kawaii`](https://github.com/waylovely-project/kawaii) build system using [this repository](https://github.com/waylovely-project/waylovely-build) as the package repository details (it... works a bit like Meson's repository or perhaps Gentoo?). Do something and something (I have forgotten the details, but just try compiling with cargo apk and you should face the issues to solve?). Do remember to insert the dependencies that you have built into the APK, as if I remember correctly this had to be done manually by me.
+
+Overall, that experiment works, but the experimental compositor version has not been tested with an actual app. More questions related on how to get the apps loaded was raised. Newer Android versions disable the execute permissions for files that can be modified by the application and the binaries that come with the APK cannot be modified at all. This means that running any programs downloaded from the Internet or any other sources is impossible, except perhaps for interpreted and JIT compilers (hey how do browsers work then).
+
+The plan was to use QEMU (though performance will suffer), compile the apps into WASI format, or depend on KVM. But then... this project is dropped altogether.
+
+You also should look into this repository, which has a barebone XDG Portals implementation for Android and also the overall foundation to properly build Waylovely Compositor. I believe the Kawaii buildsystem files have been setup. If you like to fork this project, please fork this repository rather than the previous experiment.
+
+___
+
 ![Waylovely](https://user-images.githubusercontent.com/66000635/193557047-993b33ed-58cd-4d6a-a8e2-890cde6bcf4a.png)
 
 <div align="center"><h2>Run all your Linux graphical apps on Android 💖✨✨✨</h2></div>
